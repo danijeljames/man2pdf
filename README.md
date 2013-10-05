@@ -3,7 +3,7 @@ Manual 2 PDF
 
 Shell script that can be placed in `/usr/bin` that will enable the user to request a specific man page be opened up into Preview for easier reading and to save it to a PDF.
 
-**Licence:** MIT
+**Licence:** MIT  
 **Copyright:** DanijelJ (c) 2013
 
 Usage
