@@ -34,7 +34,7 @@ $ man2pdf curl
 This will pipe the contents of that page into `Preview`, which is so much clearer. And I can print it without issues!
   
   
-### Contribution
+#### Contribution
 I would love to see people contribute to this. Whether it's a [bug report](https://github.com/danijeljames/man2pdf/issues/new), feature suggestion or a pull request. Any questions? Please send me a tweet to @danijeljames.
   
   
