@@ -3,7 +3,8 @@
 man2pdf is a **BASH** script that read a [`manpage`](http://en.wikipedia.org/wiki/Man_page) and pipe it to Preview to open up so you can save it as a `PDF` for later viewing, or just easier viewing!
 
 It works best if placed in `/usr/bin` as you can then run it from Terminal without having to use the `./` or the `sh` commands to load it up. At this point, I haven't managed to get it to install there by itself. That is currently in the feature list.
-
+  
+  
 #### Usage
 Fire up Terminal and navigate to `/usr/bin`:
 ````shell
@@ -31,8 +32,12 @@ $ man2pdf curl
 ````
 
 This will pipe the contents of that page into `Preview`, which is so much clearer. And I can print it without issues!
-
-
+  
+  
+### Contribution
+I would love to see people contribute to this. Whether it's a [bug report](https://github.com/danijeljames/man2pdf/issues/new), feature suggestion or a pull request. Any questions? Please send me a tweet to @danijeljames.
+  
+  
 #### Feature Implementation List
  1. Automatic installer for first time use to correct directory
  2. ~~Built-in ReadMe when user needs assistance in usage~~
