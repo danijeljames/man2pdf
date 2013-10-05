@@ -1,6 +1,6 @@
 # Manpage 2 PDF
 
-man2pdf is a **BASH** script that read a `manpage` and pipe it to Preview to open up so you can save it as a `PDF` for later viewing, or just easier viewing!
+man2pdf is a **BASH** script that read a [`manpage`](http://en.wikipedia.org/wiki/Man_page) and pipe it to Preview to open up so you can save it as a `PDF` for later viewing, or just easier viewing!
 
 It works best if placed in `/usr/bin` as you can then run it from Terminal without having to use the `./` or the `sh` commands to load it up. At this point, I haven't managed to get it to install there by itself. That is currently in the feature list.
 
