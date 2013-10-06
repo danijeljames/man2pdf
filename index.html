@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Man2pdf by danijeljames</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Man2pdf</h1>
+        <p>Script plug-in for OS X that will grab the manpage you request and push it to Preview so you can read it or save it as a PDF</p>
+
+        <p class="view"><a href="https://github.com/danijeljames/man2pdf">View the Project on GitHub <small>danijeljames/man2pdf</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/danijeljames/man2pdf/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/danijeljames/man2pdf/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/danijeljames/man2pdf">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="manpage-2-pdf" class="anchor" href="#manpage-2-pdf"><span class="octicon octicon-link"></span></a>Manpage 2 PDF</h1>
+
+<p><img src="http://i.imgur.com/1BrNhcT.png" alt=""></p>
+
+<p>man2pdf is a <strong>BASH</strong> script that read a <a href="http://en.wikipedia.org/wiki/Man_page"><code>manpage</code></a> and pipe it to Preview to open up so you can save it as a <code>PDF</code> for later viewing, or just easier viewing!</p>
+
+<p>It works best if placed in <code>/usr/bin</code> as you can then run it from Terminal without having to use the <code>./</code> or the <code>sh</code> commands to load it up. At this point, I haven't managed to get it to install there by itself. That is currently in the feature list.</p>
+
+<h4>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h4>
+
+<p>Fire up Terminal and navigate to <code>/usr/bin</code>:</p>
+
+<pre lang="shell"><code>$ cd /usr/bin
+</code></pre>
+
+<p>Download the file with <strong>cURL</strong>, this will require <code>sudo</code> access because it's a protected directory on OS X.</p>
+
+<pre lang="shell"><code>$ sudo curl "https://raw.github.com/danijeljames/man2pdf/master/man2pdf.sh" -o man2pdf.sh
+</code></pre>
+
+<p>Now make that file executable for later</p>
+
+<pre lang="shell"><code>$ sudo chmod +x man2pdf.sh
+</code></pre>
+
+<p>You can also do this with 1 really long command in a single pass:</p>
+
+<pre lang="shell"><code>$ cd /usr/bin &amp;&amp; sudo curl "https://raw.github.com/danijeljames/man2pdf/master/man2pdf.sh" -o man2pdf.sh &amp;&amp; sudo chmod +x man2pdf.sh
+</code></pre>
+
+<p>Then, when you need a <code>manpage</code> written out to a more readable format, just type in the name of the article you want:</p>
+
+<pre lang="shell"><code>$ man2pdf curl
+</code></pre>
+
+<p>This will pipe the contents of that page into <code>Preview</code>, which is so much clearer. And I can print it without issues!</p>
+
+<h4>
+<a name="contribution" class="anchor" href="#contribution"><span class="octicon octicon-link"></span></a>Contribution</h4>
+
+<p>I would love to see people contribute to this. Whether it's a <a href="https://github.com/danijeljames/man2pdf/issues/new">bug report</a>, feature suggestion or a pull request. Any questions? Please send me a tweet to <a href="https://github.com/danijeljames" class="user-mention">@danijeljames</a>.</p>
+
+<h4>
+<a name="feature-implementation-list" class="anchor" href="#feature-implementation-list"><span class="octicon octicon-link"></span></a>Feature Implementation List</h4>
+
+<ol>
+<li>Automatic installer for first time use to correct directory</li>
+<li><del>Built-in ReadMe when user needs assistance in usage</del></li>
+<li>Add additional functionality:
+
+<ol>
+<li>Extra switch to save PDF automatically</li>
+<li>Specify location of saving PDF</li>
+<li>Switch to save file to other format</li>
+<li>Settings file that can save all settings for on-going use</li>
+</ol>
+</li>
+</ol>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/danijeljames">danijeljames</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
