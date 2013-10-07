@@ -1,6 +1,4 @@
 # Manpage 2 PDF
-
-![](http://i.imgur.com/1BrNhcT.png)
   
 man2pdf is a **BASH** script that read a [`manpage`](http://en.wikipedia.org/wiki/Man_page) and pipe it to Preview to open up so you can save it as a `PDF` for later viewing, or just easier viewing!
 
