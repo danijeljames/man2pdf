@@ -25,7 +25,7 @@ $ sudo chmod +x man2pdf.sh
 
 You can also do this with 1 really long command in a single pass:
 ````shell
-$ cd /usr/bin && sudo curl "https://raw.github.com/danijeljames/man2pdf/master/man2pdf.sh" -o man2pdf.sh && sudo chmod +x man2pdf.sh
+$ sudo curl "https://raw.github.com/danijeljames/man2pdf/master/man2pdf.sh" -o "/usr/bin/man2pdf.sh" && sudo chmod +x man2pdf.sh
 ````
 
 Then, when you need a `manpage` written out to a more readable format, just type in the name of the article you want:
