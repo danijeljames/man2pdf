@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Man2pdf by danijeljames</title>
+    <title>man2pdf by danijeljames</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -15,8 +15,8 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Man2pdf</h1>
-        <p>Script plug-in for OS X that will grab the manpage you request and push it to Preview so you can read it or save it as a PDF</p>
+        <h1>man2pdf</h1>
+        <p>pipe manpages to Preview in OS X</p>
 
         <p class="view"><a href="https://github.com/danijeljames/man2pdf">View the Project on GitHub <small>danijeljames/man2pdf</small></a></p>
 
@@ -29,64 +29,58 @@
       </header>
       <section>
         <h1>
-<a name="manpage-2-pdf" class="anchor" href="#manpage-2-pdf"><span class="octicon octicon-link"></span></a>Manpage 2 PDF</h1>
+<a name="man2pdf" class="anchor" href="#man2pdf"><span class="octicon octicon-link"></span></a>man2pdf</h1>
 
-<p>man2pdf is a <strong>BASH</strong> script that read a <a href="http://en.wikipedia.org/wiki/Man_page"><code>manpage</code></a> and pipe it to Preview to open up so you can save it as a <code>PDF</code> for later viewing, or just easier viewing!</p>
+<p><strong>simple way to save man pages</strong></p>
 
-<p>It works best if placed in <code>/usr/bin</code> as you can then run it from Terminal without having to use the <code>./</code> or the <code>sh</code> commands to load it up. At this point, I haven't managed to get it to install there by itself. That is currently in the feature list.</p>
+<hr><p>man2pdf will quickly pipe any <a href="http://en.wikipedia.org/wiki/Man_page"><code>manpage</code></a> to Preview to open up so you can save it as a <code>PDF</code> to make life easier to read it. Simply call the manpage you want as the first positional parameter after <code>man2pdf</code> and it will do the rest for you. No hassles!  </p>
+
+<h4>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h4>
+
+<p>Download the man2pdf script to the <code>/usr/bin</code> directory <em>(requires <strong>cURL</strong> and <strong>sudo</strong>)</em>:</p>
+
+<div class="highlight highlight-bash"><pre>sudo curl <span class="s2">"https://raw.github.com/danijeljames/man2pdf/master/man2pdf.sh"</span> -o <span class="s2">"/usr/bin/man2pdf.sh"</span> <span class="o">&amp;&amp;</span> sudo chmod +x /usr/bin/man2pdf.sh
+</pre></div>
+
+<p>Install the man page for man2pdf:</p>
+
+<div class="highlight highlight-bash"><pre>sudo man2pdf -i
+</pre></div>
 
 <h4>
 <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h4>
 
-<p>Fire up Terminal and navigate to <code>/usr/bin</code>:</p>
-
-<pre lang="shell"><code>$ cd /usr/bin
-</code></pre>
-
-<p>Download the file with <strong>cURL</strong>, this will require <code>sudo</code> access because it's a protected directory on OS X.</p>
-
-<pre lang="shell"><code>$ sudo curl "https://raw.github.com/danijeljames/man2pdf/master/man2pdf.sh" -o man2pdf.sh
-</code></pre>
-
-<p>Now make that file executable for later</p>
-
-<pre lang="shell"><code>$ sudo chmod +x man2pdf.sh
-</code></pre>
-
-<p>Then, when you need a <code>manpage</code> written out to a more readable format, just type in the name of the article you want:</p>
-
-<pre lang="shell"><code>$ man2pdf curl
-</code></pre>
-
-<p>This will pipe the contents of that page into <code>Preview</code>, which is so much clearer. And I can print it without issues!</p>
-
-<h4>
-<a name="1-step-install" class="anchor" href="#1-step-install"><span class="octicon octicon-link"></span></a>1 Step Install</h4>
-
-<pre lang="shell"><code>$ sudo curl "https://raw.github.com/danijeljames/man2pdf/master/man2pdf.sh" -o "/usr/bin/man2pdf.sh" &amp;&amp; sudo chmod +x man2pdf.sh
-</code></pre>
-
-<h4>
+<table>
+<thead><tr>
+<th>man2pdf</th>
+<th>[-h]        [manpage]        [-i]</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>-h</code></td>
+<td>Displays the help file</td>
+</tr>
+<tr>
+<td><code>-i</code></td>
+<td>Installs the manpage for man2pdf <em>(requires sudo)</em>
+</td>
+</tr>
+<tr>
+<td><code>manpage</code></td>
+<td>
+<code>man2pdf echo</code> would get the <code>echo</code> manpage and pipe it to Preview</td>
+</tr>
+</tbody>
+</table><h4>
 <a name="contribution" class="anchor" href="#contribution"><span class="octicon octicon-link"></span></a>Contribution</h4>
 
-<p>I would love to see people contribute to this. Whether it's a <a href="https://github.com/danijeljames/man2pdf/issues/new">bug report</a>, feature suggestion or a pull request. Any questions? Please send me a tweet to <a href="https://github.com/danijeljames" class="user-mention">@danijeljames</a>.</p>
-
-<h4>
-<a name="feature-implementation-list" class="anchor" href="#feature-implementation-list"><span class="octicon octicon-link"></span></a>Feature Implementation List</h4>
-
-<ol>
-<li>Automatic installer for first time use to correct directory</li>
-<li><del>Built-in ReadMe when user needs assistance in usage</del></li>
-<li>Add additional functionality:
-
-<ol>
-<li>Extra switch to save PDF automatically</li>
-<li>Specify location of saving PDF</li>
-<li>Switch to save file to other format</li>
-<li>Settings file that can save all settings for on-going use</li>
-</ol>
+<ul>
+<li>Log a <a href="https://github.com/danijeljames/man2pdf/issues/new">bug report</a>
 </li>
-</ol>
+<li>Send tweet to <a href="https://twitter.com/danijeljames">@danijeljames</a>
+</li>
+</ul>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/danijeljames">danijeljames</a></p>
