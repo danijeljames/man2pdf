@@ -1,48 +1,52 @@
-.TH MAN2PDF 1
-.SH NAME
+.TH MAN2PDF 1 "January 13, 2014"
+.SH "NAME"
 man2pdf \- exports man pages to Preview.app to save as PDF
-.SH SYNOPSIS
+.SH "SYNOPSIS"
 .B man2pdf
+[
+.BI manpage
+]
 [
 .BI \-h
 ]
 [
-.BI manpage
+.BI \-i
 ]
 
-.SH DESCRIPTION
+.SH "DESCRIPTION"
 .I man2pdf
-is a command-line utility that will open Unix man pages in Preview.app. The syntax is the same as the man(1) command.
+is a command-line utility that will open Unix man pages in Preview.app. The syntax is the same as the man(1) utility.
 .PP
 .I man2pdf
-will open a page in
-.I Preview.app
-for only the first man page requested. If multiple pages are requested, they will be ignored. If no man page is specified, the
+will read a manpage using grep(1) and then pass it to
+.I Preview
+for a specified manpage. Any subsequent manpages are ignored. If no man page is specified, the
 .I help
 page will be displayed.
 .PP
 .SH USAGE
+.I manpage
+\- specifies which manpage requested to be parsed to Preview
+.PP
 .I \-h
-flag opens the
+\- flag opens the
 .I help
 menu
 .PP
-.I manpage
-specifies which manpage requested to be parsed to Preview.app
+.I \-i
+\- installs this manpage for OS X
 .PP
 To display the man page for
 .I echo
 would require echo to be specified after the man2pdf call:
 .PP
 .I man2pdf echo
-\- would call the echo the man page of
-.I echo
-and pipe it to Preview.app to view. From here, you could save it as PDF for later viewing, printing, etc.
-.SH SEE ALSO
+.SH "SEE ALSO"
 .PP
-Preview.app, man(1), whereis(1)
+Preview, man(1), whereis(1)
 .SH AUTHOR
 .PP
 Danijel James <danijel.james@gmail.com>
 .PP
 Please send any bug reports/suggestions.
+
