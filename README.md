@@ -10,7 +10,7 @@ man2pdf will quickly pipe any [`manpage`](http://en.wikipedia.org/wiki/Man_page)
 #### Installation #
 Download the man2pdf script to the `/usr/bin` directory _(requires **cURL** and **sudo**)_:
 ``` bash
-sudo curl "https://raw.github.com/danijeljames/man2pdf/master/man2pdf.sh" -o "/usr/bin/man2pdf" && sudo chmod +x /usr/bin/man2pdf
+sudo curl "https://raw.github.com/danijeljames/man2pdf/master/man2pdf.sh" -o "/usr/bin/man2pdf" && sudo chmod a+x /usr/bin/man2pdf
 ```
 Install the man page for man2pdf:
 ``` bash
