@@ -1,5 +1,10 @@
 # man2pdf Changelog
 
+## 3.0.0
+
+- Complete re-write of man2pdf
+- Updated manpage v2
+
 ## 2.0.1
 
 - Added man page **man2pdf(1)** to repository
