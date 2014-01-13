@@ -3,6 +3,9 @@
 ## 3.0.0
 
 - Complete re-write of man2pdf
+- Version switch added
+- Compatible with `/usr/bin` directory
+- Portions of code from apropros(1)
 - Updated manpage v2
 
 ## 2.0.1
