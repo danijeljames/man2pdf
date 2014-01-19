@@ -20,7 +20,7 @@ then
     exit 1
 fi
 
-manpath=`man --path | tr : '\040'
+manpath=`man --path | tr : '\040'`
 
 if [ "$manpath" = "" ]
 then
