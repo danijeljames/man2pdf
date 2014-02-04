@@ -26,3 +26,7 @@ sudo man2pdf -i
 #### Contribution #
 - Log a [bug report](https://github.com/danijeljames/man2pdf/issues/new)
 - Send tweet to [@danijeljames](https://twitter.com/danijeljames)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/danijeljames/man2pdf/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
